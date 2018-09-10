@@ -1,0 +1,221 @@
+Apple Academy
+
+to do - fazer questões de concurso sobre Orientação a Objeto e Java.
+	 treinar no URI | Java e C.
+	 fazer as questões das provas passadas.
+	 pesquisar classes e métodos abstratos.
+	 pesquisar coesao e acoplamento.
+	
+método init serve para inicializar qualquer processo, é um método que faz a execução de qualquer processo dado. Fazer inicialização de um programa Applet
+
+Conceitos de Orientação a Objeto
+Objeto
+Mensagem
+Classe
+Abstração
+Encapsulamento
+Herança
+Polimorfismo
+
+Vantagens de Orientação a Objeto
+ o aumento de produtividade
+ o reuso de código
+ a redução das linhas de código programadas
+ a separação de responsabilidades
+ a componentização
+ a maior flexibilidade do sistema
+ a escalabilidade
+ a facilidade na manutenção, dentre outras vantagens.
+
+Orientação a Objeto envolve conceitos de abstração, encapsulamento, generalização e especialização.
+
+
+
+
+
+
+
+
+
+
+Classes - Conceito estático
+Atributos são características da classe
+Atributos
+Atributos de instância são criados para cada objeto, e não são compartilhados entre eles.
+Atributos de classe são criados de uma vez só, para a classe e é compartilhado para todas as instâncias da mesma ( podem ser acessados diretamente de outras classes ).
+Atributo estático
+É único e compartilhado entre todas as instâncias da classe.
+
+
+
+Métodos são ações da classe
+
+Objetos - Conceito dinâmico
+Objeto é o que é criado a partir da classe.
+São instâncias das classes
+Uma classe pode ser usada para instanciar vários objetos.
+Objetos que são instâncias da mesma classe, possuem os mesmos métodos e atributos, e são
+independentes entre si.
+É impossível ter um objeto sem uma classe que o defina.
+
+Mensagens
+Executa o método
+Composta por três partes -> Objeto destino que receberá a mensagem, nome do método a ser invocado pela mensagem e parâmetros necessários.
+Há três maneiras de chamar um método:
+Na mesma classe
+Referência a um objeto
+Métodos estáticos
+
+
+
+
+
+Construtor
+Método que inicializa o objeto, executado na instanciação como ‘new’
+Deve ter o mesmo número da classe
+Caso não inicializado, em java, são implementados padronizadamente com tipos números : 0, Valores booleanos : false e referências : null.
+
+
+
+
+
+
+Conceitos iniciais
+
+Objeto
+Identidade, atributo, estado e comportamento.
+
+Conceitos reais -> carro, animal, barco e etc.
+Conceitos abstratos -> conta poupança, funcionário, pessoa física e etc.
+
+Instâncias são as cópias do objeto (carro2, carro3).
+
+
+Abstração
+Representam os diversos pontos de vista sobre um determinado objeto. 
+Define a interface com o mundo externo mas deixa o comportamento para ser resolvido adiante.
+Determinando apenas os aspectos relevantes para sua chamada.
+Basicamente, a abstração é um processo mental através do qual nos concentramos nos
+aspectos relevantes de um conjunto de objetos desconsiderando as suas diferenças.
+Como um gato pode ser visto pelo dono como mascote e pelo veterinário por um ser dotado de sistema esquelético, respiratório e etc.
+
+Classificação
+Agrupar os objetos que possuam os mesmos atributos.
+Como veículos podem ser agrupados por cor e número de rodas.
+
+
+
+
+
+Encapsulamento
+Restringe a visibilidade da informação para obter maior clareza, ajudando na manutenção e na reutilização dos códigos.
+Cada módulo deve obter apenas o que lhe diz respeito.
+Deixar visível apenas o necessário.
+Qualquer classe encapsulada deverá proteger seus atributos não permitindo que elementos externos a ela alterem seus valores, necessário então, deixar esses atributos privados.
+Se necessário a alteração de um valor, usa-se GETTER ( pegar o valor)  e SETTER ( alterar o valor )
+As funcionalidades da classe ficam separadas de sua implementação, existe um “contrato”, de cada classe com o mundo externo, chamado de interface
+	Acoplamento
+	Refere-se ao nível que uma classe conhece e usa os membros de outra classe, para reduzir danos em suas alterações.
+	Coesão
+	Refere-se a responsabilidade de uma classe, com atributos e métodos para fazerem apenas sua funcionalidade.
+Um bom software deve ter alta Coesão e baixo Acoplamento.
+Como uma calculadora e um carro, podem ser olhados e utilizá-los sem abri-los para ver seu funcionamento.
+
+
+
+Herança
+Usa-se o termo extends.
+Relacionado ao conceito, é um(a).
+	Generalização
+	Quando partimos de uma classe e chegamos a sua classe mãe.
+	Especialização
+	Quando partimos de uma classe mãe e chegamos as classes filhas.
+		Gato é uma especialização de Animal e Animal é uma generalização de Gato. Gato estende animal.
+
+Segue o princípio da visibilidade, o que é privado em uma classe não pode ser observado em suas subclasses.
+Os objetos podem ser subdivididos e as subclasses “herdam” os mesmos atributos da superclasse, auxiliando na reutilização do código.
+Possui atributos e métodos gerais.
+	Superclasse -> Classe principal que fornece os atributos e métodos em comum.
+	Subclasse 	 -> Classe que herda os atributos e métodos.
+Em Java só é permitido heranças simples ( uma subclasse só pode ter uma superclasse).	
+Como os meios de transporte, possuem características em comum e podem ser reutilizados a partir da herança.	
+
+Polimorfismo
+Entendido como um código que pode possuir diferentes comportamentos, utilizando o mesmo código por mais de uma classe.
+Permite programar de forma geral em vez de específica.
+Dependente da Herança.
+Pode ocorrer a redefinição de métodos e a sobrecarga deles, usando override e overloading.
+Existem 3 tipos de Polimorfismo que a linguagem pode ter, classificados em “Universal e Ad-Hoc”
+Universal:
+o Inclusão: um ponteiro para classe mãe pode apontar para uma instância de
+uma classe filha (tipo de polimorfismo mais básico que existe). Ver
+“redefinição de métodos” nos próximos parágrafos.
+o Paramétrico: se restringe ao uso de templates (C++, por exemplo) e
+generics (Java).
+ Ad-Hoc:
+o Sobrecarga: duas funções/métodos com o mesmo nome, mas assinaturas
+diferentes.
+
+
+Como análise a classe Polígonos, que representa as formas geométricas, o método para calcular a área deve ter diferentes comportamentos dependendo do polígono em questão.
+
+
+Persistência
+O estado e o comportamento de um objeto variam com o tempo.
+Como o preço de um produto.
+
+			Modificadores de acesso
+
+Público -> Atributos e métodos são acessíveis em todos os métodos de todas as classes. ( Nível menos rígido de encapsulamento )
+Privado -> Atributos e métodos são acessíveis somente nos métodos da própria classe. ( Nível mais rígido de encapsulamento )	
+Protegido -> Atributos e métodos são acessíveis nos métodos da própria classe e suas subclasses.
+Nada especificado, equivale a “pacote” ou “default”  ou “friendly” -> Atributos e métodos são acessíveis somente nos métodos das classes que pertencem ao “pacote” em que foram criados.
+	
+Ordem de restrição
+	Privado 	-	 Default	 -	 Protegido 	- 	Público
+	
+	
+
+				Classes abstratas
+
+Não podem ser instanciadas
+Sempre serão estendidas, quase sempre usará heranças.
+Representam conceitos e são utilizadas para criar uma hierarquia de classes.
+
+Devem ser sobrescritos nas subclasses. Se a subclasse não sobrescrever todos os métodos, ela deve ser declarada como abstract.
+Uma classe que contenha algum método abstrato deve ser declarada como abstrata.
+Não necessariamente contém métodos abstratos, podem apenas
+representar conceitos e serem a base para uma hierarquia de classes.
+
+				Interfaces
+
+Permite definir comportamentos comuns à várias classes que não tenham relações hierárquicas entre si.
+
+					IMPORTANTE
+
+
+
+
+Métodos get e set
+Concentra toda a validação e exposição de um atributo em um único lugar.
+
+
+			QUESTÕES
+
+Possibilidade de ter mais de um método com o mesmo nome, na
+mesma classe, mas com parâmetros distintos.
+
+O conjunto: nome do método + parâmetros , é chamado de
+assinatura do método.
+
+Não é permitido ter dois métodos na mesma classe declarados com a
+mesma assinatura.
+
+Polimorfismo  é uma característica que reduz bastante o esforço necessário para ampliar o projeto de um sistema orientado a objetos, permitindo que várias operações diferentes tenham o mesmo nome.
+
+
+
+
+
+
+
